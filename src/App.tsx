@@ -1,7 +1,22 @@
-import { Text } from '@chakra-ui/react'
+// import { Text } from '@chakra-ui/react'
+// export default function App() {
+//   return (
+//      <div className='theme'>
+//       <Text fontSize='6xl' color='black'>Hello World</Text>
+//      </div>
+//   )
+// }
 
-export default function App() {
+import * as React from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "@/routes";
+
+interface IAppProps {}
+
+const App: React.FunctionComponent<IAppProps> = () => {
   return (
-    <Text fontSize='6xl'>Hello World</Text>
-  )
-}
+      <RouterProvider router={router} />
+  );
+};
+
+export default App;

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #5bb462;
+  --secondary-color: #ffea00;
+  --overlay: rgba(0, 0, 0, 0.7);
+  --text-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #4f9c55;
+    --secondary-color: #e3d002;
+    --overlay: rgba(255, 255, 255, 0.7);
+    --text-color: #fff;
+  }
+}
+
+body {
+  font-family: "Della Respira", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
